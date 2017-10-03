@@ -1,0 +1,7 @@
+SoilSensor0.cert.pem
+SoilSensor0.private.key
+SoilSensor0.public.key
+root-CA.crt
+runAwsSoilSensor0.sh
+node_modules
+
