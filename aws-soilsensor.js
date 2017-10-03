@@ -17,7 +17,7 @@ var device = awsIot.device({
     keyPath: args['private-key'],
     certPath: args['client-certificate'],
     caPath: args['ca-certificate'],
-    clientId: "SoilSensor0",
+    clientId: args['client-id'],
     host: args['host-name']
 });
 
