@@ -1,5 +1,5 @@
 # AwsSoilSensor
-retrieves values from the soil sensor and send them it to AWS IOT
+Runs the soil moisture sensor and send the measurements to the AWS IOT platform.
 
 ## Get Started
 ### Prerequisites
