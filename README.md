@@ -21,6 +21,8 @@ retrieves values from the soil sensor and send them it to AWS IOT
 ```
   $ mv ~/Downloads/connect_device_package.zip ~/AwsSoilSensor
   $ unzip connect_device_package.zip
+  $ cp -r ./connect_device_package/* .
+  $ rm -fr connect_device_package connect_device_package.zip
 ```
 
 * Download the project's dependencies
@@ -29,3 +31,8 @@ retrieves values from the soil sensor and send them it to AWS IOT
 ```
 
 ### Start
+
+Run the following command replacing the dots with the host-name of your *thing*
+```
+  $ node aws-soilsensor.js --host-name= ......iot.eu-central-1.amazonaws.com --private-key=SoilSensor0.private.key --client-certificate=SoilSensor0.cert.pem --ca-certificate=root-CA.crt --client-id=SoilSensor0
+```
